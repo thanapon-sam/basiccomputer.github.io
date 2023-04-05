@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
-const endpoint = environment.API_ENOPOINT;
+// const endpoint = environment.API_ENOPOINT;
 
 @Injectable({
   providedIn: 'root'
