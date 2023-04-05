@@ -1,0 +1,101 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+<!-- MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- ============= homePage ============= -->
+
+
+  <div role="main">
+    <router-outlet></router-outlet>
+  </div>
+
+   
+
+
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+  <div class="container">
+    <img src="assets/images/logo01.png" height="70">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+
+    </div>
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase " aria-current="page" href="user/home"><i class="fa-solid fa-home me-1"></i>หน้าหลัก</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="fa-solid fa-book me-1"></i> เนื้อหา </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="user/chapterone">หน่วยการเรียนรู้ที่ 1</a></li>
+            <li><a class="dropdown-item" href="user/chaptertwo">หน่วยการเรียนรู้ที่ 2</a></li>
+            <li><a class="dropdown-item" href="user/chapterthree">หน่วยการเรียนรู้ที่ 3</a></li>
+            <li><a class="dropdown-item" href="user/chapterfour">หน่วยการเรียนรู้ที่ 4</a></li>
+            <li><a class="dropdown-item" href="user/chapterfive">หน่วยการเรียนรู้ที่ 5</a></li>
+
+
+
+          </ul>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link mx-2 text-uppercase" href="user/quiz"><i class="fa-solid fa-check-square me-1"></i>แบบทดสอบ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase" href="user/news"><i class="fa-solid fa-file-text me-1"></i>ข่าวสาร</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 text-uppercase" href="user/aboutus"><i class="fa-solid fa-users me-1"></i>เกี่ยวกับเรา</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto ">
+        <div class="d-flex align-items-center">
+          <!-- <a class="nav-link" style="padding-right: 10px;font-size: 18px;"><b>{{userId}}</b></a> -->
+        <div class="dropdown">
+
+          <a class="dropdown-toggle d-flex align-items-center hidden-arrow" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        </a>
+     
+        </div>
+      </div>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+      <!-- content -->
+      <div role="main">
+        <router-outlet></router-outlet>
+      </div>
+
+      <!-- footer -->
+      <footer style="background: #ffffff;">
+        <div class="font-monospace text-center my-auto copyright  text-white"
+          style="padding: 0;padding-top: 13px;height: 49.8px;background: #214d90;;width: 100%;">
+          <span class="" style="font-family:  serif; font-size: 14px;padding-top: 4px;"> computer learning media © 2023 All Rights Reserved.
+          </span>
+        </div>
+      </footer>
+
+
+  
+
